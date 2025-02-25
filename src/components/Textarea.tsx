@@ -13,14 +13,14 @@ type Stats = {
 };
 
 type Props = {
-  setStats: React.Dispatch<React.SetStateAction<Stats>>; // The crucial change
+  setStats: React.Dispatch<React.SetStateAction<Stats>>;
 };
 
 export default function Textarea({ setStats }: Props) {
   const [text, setText] = useState("");
   const [warning, setWarning] = useState("");
 
-  const handleChange = (e: any) => {
+  const handleChange = (e) => {
     // extract text from event
     let text = e.target.value;
 
