@@ -20,7 +20,7 @@ export default function Textarea({ setStats }: Props) {
   const [text, setText] = useState("");
   const [warning, setWarning] = useState("");
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     // extract text from event
     let text = e.target.value;
 
